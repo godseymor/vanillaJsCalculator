@@ -105,7 +105,7 @@
     function clearLastSymbol() {
         inputNode.value = inputNode.value.slice(0, -1);
         calcState.defaultState = false;
-    }
+    };
 
     function calculate() {
         try {

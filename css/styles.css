@@ -11,6 +11,8 @@ body {
 .calc {
     display: flex;
     flex-direction: column;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
 }
 
 .header__input {
@@ -18,24 +20,32 @@ body {
     padding: 0;
     border: none;
     height: 30px;
-    margin-bottom: 10px;
-    font-size: 1.2em;
+    font-size: 1em;
+    padding: 20px 5px 10px;
+    background: #212121;
+    color: #fff;
     outline: none;
-    padding: 5px;
     text-align: right;
+    border-radius: 10px 10px 0 0;
 }
-.header__input:focus {
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.35);
+
+.body__row {
+    display: flex;
+}
+.body__row:last-child .btn:first-child {
+    border-radius: 0 0 0 10px;
+}
+.body__row:last-child .btn:last-child {
+    border-radius: 0 0 10px 0;
 }
 
 .btn {
     padding: 0;
     width: 60px;
-    height: 40px;
+    height: 50px;
     font-size: 1.2em;
-    margin: 2px 0;
     border:none;
-    background: #fafafa;
+    background: #bdbdbd;
     outline: none;
 }
 .btn:active {

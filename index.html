@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Calc</title>
+  </head>
+  <body>
+
+    <div class="calc">
+        <div class="calc__header">
+            <input class="header__input" readonly type="text" value="0">
+        </div>
+        <div class="calc__body">
+            <div class="body__row">
+                <button class="btn inputValue" value="(">&#040;</button>
+                <button class="btn inputValue" value=")">&#041;</button>
+                <button class="btn percent" value="%">&#037;</button>
+                <button class="btn inputValue" value="*">&#xD7;</button>
+            </div>
+
+            <div class="body__row">
+                <button class="btn inputValue" value="7">7</button>
+                <button class="btn inputValue" value="8">8</button>
+                <button class="btn inputValue" value="9">9</button>
+                <button class="btn inputValue" value="/">&#247;</button>
+            </div>
+
+            <div class="body__row">
+                <button class="btn inputValue" value="4">4</button>
+                <button class="btn inputValue" value="5">5</button>
+                <button class="btn inputValue" value="6">6</button>
+                <button class="btn inputValue" value="+">&#043;</button>
+            </div>
+
+            <div class="body__row">
+                <button class="btn inputValue" value="1">1</button>
+                <button class="btn inputValue" value="2">2</button>
+                <button class="btn inputValue" value="3">3</button>
+                <button class="btn inputValue" value="-">&#045;</button>
+            </div>
+
+            <div class="body__row">
+                <button class="btn inputValue" value="0">0</button>
+                <button class="btn inputValue" value=".">.</button>
+                <button class="btn clear" value="clear">CE</button>
+                <button class="btn btn--orange equals" value="equals">&#061;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/calc.js"></script>
+  </body>
+</html>

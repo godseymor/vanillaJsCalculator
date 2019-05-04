@@ -11,22 +11,22 @@
 
     // keyCode : [value, operator]
     const availableKeys = {
-        48: ['0', false], // 0
-        49: ['1', false], // 1
-        50: ['2', false], // 2
-        51: ['3', false], // 3
-        52: ['4', false], // 4
-        53: ['5', false], // 5
-        54: ['6', false], // 6
-        55: ['7', false], // 7
-        56: ['8', false], // 8
-        57: ['9', false], // 9
-        40: ['(', true], // (
-        41: [')', true], // )
-        42: ['*', true], // *
-        43: ['+', true], // +
-        45: ['-', true], // -
-        46: ['.', false], // .
+        48: ['0', false],
+        49: ['1', false],
+        50: ['2', false], 
+        51: ['3', false],
+        52: ['4', false],
+        53: ['5', false],
+        54: ['6', false],
+        55: ['7', false],
+        56: ['8', false], 
+        57: ['9', false],
+        40: ['(', true],
+        41: [')', true],
+        42: ['*', true],
+        43: ['+', true],
+        45: ['-', true],
+        46: ['.', false],
         47: ['/', true]
     };
 
@@ -59,14 +59,14 @@
     });
 
     buttons.forEach(function (button) {
-        button.addEventListener('click', function (evt) {
+        button.addEventListener('mousedown', function (evt) {
             addValue(evt.target.value);
         })
     });
 
-    percentBtn.addEventListener('click', calcPercents);
+    percentBtn.addEventListener('mousedown', calcPercents);
     clearBtn.addEventListener('mousedown', clear);
-    equalsBtn.addEventListener('click', calculate);
+    equalsBtn.addEventListener('mousedown', calculate);
 
     /**
      * Функция добавления значения в инпут
